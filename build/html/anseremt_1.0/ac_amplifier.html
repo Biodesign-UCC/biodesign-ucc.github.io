@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AC Amplifier &#8212; Biodesign UCC 1.0 documentation</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Field generator" href="field_generator.html" />
+    <link rel="prev" title="Waveform generator" href="waveform_generator.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+<a class="navbar-brand" href="../index.html">
+<p class="title">Biodesign UCC</p>
+</a>
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="index.html">
+  Anser EMT v1.0 Documentation
+ </a>
+</li>
+
+    
+    <li class="nav-item">
+        <a class="nav-link nav-external" href="https://github.com/Biodesign-UCC">Group Github<i class="fas fa-external-link-alt"></i></a>
+    </li>
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/Biodesign-UCC/biodesign-ucc.github.io" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/cantillonmurphy" rel="noopener" target="_blank" title="Twitter">
+            <span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+      <div class="navbar-end-item">
+        <form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <p class="caption" role="heading">
+ <span class="caption-text">
+  Contents:
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="design_overview.html">
+   Anser EMT
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="waveform_generator.html">
+   Waveform generator
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   AC Amplifier
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="field_generator.html">
+   Field generator
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sensor.html">
+   Tracking Sensor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sensor_amp.html">
+   Sensor Amplifier
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="current.html">
+   Current summer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="daq.html">
+   Data Acquisition
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="demodulation.html">
+   Demodulation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pando.html">
+   Position and Orientation Algorithm
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#high-speed-amplifier">
+   High-speed amplifier
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#current-amplifier">
+   Current amplifier
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lm334-current-bias">
+   LM334 current bias
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="ac-amplifier">
+<h1>AC Amplifier<a class="headerlink" href="#ac-amplifier" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="high-speed-amplifier">
+<h2>High-speed amplifier<a class="headerlink" href="#high-speed-amplifier" title="Permalink to this headline">¶</a></h2>
+<p>A high-speed feedback amplifier achieves closed loop control of the emitter coil current. By ensuring a stable alternating current amplitude exists it can be assumed that the associated time-varying magnetic field amplitude is constant too. The LM7171 high speed operational amplifier is used for this design. The amplifier circuit design is shown below.</p>
+<a class="reference internal image-reference" href="../_images/highspeedamp.png"><img alt="../_images/highspeedamp.png" class="align-center" src="../_images/highspeedamp.png" style="width: 520.8000000000001px; height: 345.6px;" /></a>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(R_f\)</span> is the sense resistor (typically 1 ohm). The voltage dropped across this resistor is used as feedback for the amplifier</p></li>
+<li><p><span class="math notranslate nohighlight">\(L_t\)</span> and <span class="math notranslate nohighlight">\(R_t\)</span> are the series resistance and inductance of the emitter coil. <span class="math notranslate nohighlight">\(L_t\)</span> is typically 75 <span class="math notranslate nohighlight">\(\mu H\)</span> for the square coil design. <span class="math notranslate nohighlight">\(R_t\)</span> is typically 2.9 <span class="math notranslate nohighlight">\(\Omega\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(R_c\)</span> and <span class="math notranslate nohighlight">\(C_c\)</span> form a compensator network for the amplifier. This network maintains amplifier stability and prevents excessive ringing. Anser EMT uses an <span class="math notranslate nohighlight">\(R_c\)</span> of 5 <span class="math notranslate nohighlight">\(k \Omega\)</span> and <span class="math notranslate nohighlight">\(C_c\)</span> of 70 <span class="math notranslate nohighlight">\(nF\)</span></p></li>
+<li><p>The current amplifier enables the amplifier to deliver the desired current to the emitter coil (described in the next section).</p></li>
+</ul>
+<p>Details of how the compensation network impacts the operation of the circuit and the derivation of component values can be read in more depth <a class="footnote-reference brackets" href="#id5" id="id1">1</a> on page 91.</p>
+</div>
+<div class="section" id="current-amplifier">
+<h2>Current amplifier<a class="headerlink" href="#current-amplifier" title="Permalink to this headline">¶</a></h2>
+<p>The current amplifier enables the LM7171 to deliver the required current to the transmitter coils. The design follows a standard push-pull class B amplifier design. The figure below shows the LM7171 high speed amplifier with addition of the class B current boost stage.</p>
+<a class="reference internal image-reference" href="../_images/classb.png"><img alt="../_images/classb.png" class="align-center" src="../_images/classb.png" style="width: 624.0px; height: 610.4px;" /></a>
+<p>Transistor Q1 carries the main load current during positive cycles of the input waveform, while Q2 sinks current during the negative cycles. The current source and diode arrangement is used in order to bias the two transistors and to reduce crossover distortion as the conducting transistor switches from Q1 to Q2.</p>
+<ul class="simple">
+<li><p>The LM334 current sources provide a bias current to the amplifier</p></li>
+<li><p>Diode D1 and transistor Q1 form a pair. i.e. their base-emitter characteristics match (reasonably well). Likewise with D2 and Q2. This ensures a constant trickle bias and reduces cross-over distortion.</p></li>
+<li><p>Diodes used are IN4001 <a class="footnote-reference brackets" href="#id6" id="id2">2</a></p></li>
+<li><p>Transistors used are D44H8 (NPN) and D45H8 (PNP) <a class="footnote-reference brackets" href="#id7" id="id3">3</a></p></li>
+</ul>
+</div>
+<div class="section" id="lm334-current-bias">
+<h2>LM334 current bias<a class="headerlink" href="#lm334-current-bias" title="Permalink to this headline">¶</a></h2>
+<p>The LM334 provides a bias to the current amplifier circuit as seen above. The configuration of the LM334 is shown in the figure below. This is a modified figure taken from LM334 <a class="footnote-reference brackets" href="#id8" id="id4">4</a>.</p>
+<a class="reference internal image-reference" href="../_images/lm334source.png"><img alt="../_images/lm334source.png" class="align-center" src="../_images/lm334source.png" style="width: 388.2px; height: 489.59999999999997px;" /></a>
+<p>The LM334 is configured as a “Zero Temperature Coefficent Current Source”. This means that the bias current is immune to ambient temperature changes and ensures the circuit operating point remains stationary.</p>
+<dl class="footnote brackets">
+<dt class="label" id="id5"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p><a class="reference external" href="https://cora.ucc.ie/bitstream/handle/10468/2025/Thesis_Kilian_O_Donoghue.pdf?sequence=3&amp;isAllowed=y">https://cora.ucc.ie/bitstream/handle/10468/2025/Thesis_Kilian_O_Donoghue.pdf?sequence=3&amp;isAllowed=y</a></p>
+</dd>
+<dt class="label" id="id6"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dd><p><a class="reference external" href="http://www.diodes.com/downloads/5642">http://www.diodes.com/downloads/5642</a></p>
+</dd>
+<dt class="label" id="id7"><span class="brackets"><a class="fn-backref" href="#id3">3</a></span></dt>
+<dd><p><a class="reference external" href="http://www.onsemi.com/pub_link/Collateral/D44H-D.PDF">http://www.onsemi.com/pub_link/Collateral/D44H-D.PDF</a></p>
+</dd>
+<dt class="label" id="id8"><span class="brackets"><a class="fn-backref" href="#id4">4</a></span></dt>
+<dd><p><a class="reference external" href="http://www.ti.com/lit/ds/symlink/lm134.pdf">http://www.ti.com/lit/ds/symlink/lm134.pdf</a></p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+              </div>
+              
+              
+              <div class='prev-next-bottom'>
+                
+    <a class='left-prev' id="prev-link" href="waveform_generator.html" title="previous page">Waveform generator</a>
+    <a class='right-next' id="next-link" href="field_generator.html" title="next page">Field generator</a>
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2021, Alex Jaeger.<br/>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.1.2.<br/>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>

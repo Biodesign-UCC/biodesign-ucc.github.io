@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tracking Sensor &#8212; Biodesign UCC 1.0 documentation</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Sensor Amplifier" href="sensor_amp.html" />
+    <link rel="prev" title="Field generator" href="field_generator.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+<a class="navbar-brand" href="../index.html">
+<p class="title">Biodesign UCC</p>
+</a>
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="index.html">
+  Anser EMT v1.0 Documentation
+ </a>
+</li>
+
+    
+    <li class="nav-item">
+        <a class="nav-link nav-external" href="https://github.com/Biodesign-UCC">Group Github<i class="fas fa-external-link-alt"></i></a>
+    </li>
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/Biodesign-UCC/biodesign-ucc.github.io" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/cantillonmurphy" rel="noopener" target="_blank" title="Twitter">
+            <span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+      <div class="navbar-end-item">
+        <form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <p class="caption" role="heading">
+ <span class="caption-text">
+  Contents:
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="design_overview.html">
+   Anser EMT
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="waveform_generator.html">
+   Waveform generator
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ac_amplifier.html">
+   AC Amplifier
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="field_generator.html">
+   Field generator
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Tracking Sensor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sensor_amp.html">
+   Sensor Amplifier
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="current.html">
+   Current summer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="daq.html">
+   Data Acquisition
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="demodulation.html">
+   Demodulation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pando.html">
+   Position and Orientation Algorithm
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+
+<nav id="bd-toc-nav">
+    
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="tracking-sensor">
+<h1>Tracking Sensor<a class="headerlink" href="#tracking-sensor" title="Permalink to this headline">¶</a></h1>
+<p>The tracking sensor produces a time-varying voltage signal when placed in the working volume of the tracking system. A sensor consists of a coil of wire that is typically wound around a magnetically permeable material. A diagram of the coil construction is shown below:</p>
+<a class="reference internal image-reference" href="../_images/sensordiagram.png"><img alt="../_images/sensordiagram.png" class="align-center" src="../_images/sensordiagram.png" style="width: 531.5px; height: 156.5px;" /></a>
+<p>This voltage is induced according to faraday’s law:</p>
+<div class="math notranslate nohighlight">
+\[v_i(t) = -N\frac{d\Phi_{i}}{dt}\]</div>
+<p>where <span class="math notranslate nohighlight">\(N\)</span> is the number of coil turns and <span class="math notranslate nohighlight">\(\Phi_{i}\)</span> is the magnetic flux intersecting the sensor due to the <span class="math notranslate nohighlight">\(i^{th}\)</span> transmitter coil PCB. <span class="math notranslate nohighlight">\(\frac{d\Phi_i}{dt}\)</span> depends on the position, orientation, core material and frequency of the emitter coil w.r.t. the sensor.</p>
+<p>To derive the voltage across on the sensor in terms of system variables we first look at the magnetic field intensity <span class="math notranslate nohighlight">\(\mathbf{H_i}\)</span> at a particular point in space due to a single PCB coil. This intensity is calculated from the PCB coil model described in section 3a and can be written as</p>
+<div class="math notranslate nohighlight">
+\[\mathbf{H_i} = H_0\sin(\omega_i t)\mathbf{n_H}\]</div>
+<p>where <span class="math notranslate nohighlight">\(H_0\)</span> is the magnitude of the intensity, <span class="math notranslate nohighlight">\(\omega_i\)</span> is the frequency of the time varying field and <span class="math notranslate nohighlight">\(n_H\)</span> is a unit vector pointing in the direction of the field intensity. By placing a sensor at this point in space, the magnetic flux intersecting the sensor can be written as</p>
+<div class="math notranslate nohighlight">
+\[\Phi_i = \mu_0\mu_r A H_0\sin(\omega_i t)\mathbf{n_H . n_A}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\mu_0\)</span> and <span class="math notranslate nohighlight">\(\mu_r\)</span> are absolute and relative permeabilities of free space and ferrite core respectively, <span class="math notranslate nohighlight">\(A\)</span> is the cross sectional area of the sensor and <span class="math notranslate nohighlight">\(n_A\)</span> is a unit vector pointing along the axis of the sensor. Multiplying by the number of turns <span class="math notranslate nohighlight">\(N\)</span> and taking the time derivative results in</p>
+<div class="math notranslate nohighlight">
+\[v_i(t) = \frac{d\Phi_i}{dt}= - \mu_0\mu_r A N  H_0 \omega_i\cos(\omega_i t)\mathbf{n_H . n_A}\]</div>
+<p>The negative sign is added to satisfy Lenz’s law. This equation highlights some important aspects of the system:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The magnitude of the induced voltage increases lineary with frequency <span class="math notranslate nohighlight">\(\omega\)</span></p></li>
+<li><p>The voltage depends on the orientation of the sensor with respect the magnetic field. If the sensor is positioned such that its axis is perpendicular to the field direction <span class="math notranslate nohighlight">\(\mathbf{n_H.n_A}=0\)</span> and no voltage is induced for a particular frequency.</p></li>
+<li><p>The magnetic core of the sensor (in this case ferrite) has a significant impact on sensor gain. Depending on the type of ferrite used, relative permeabilities (<span class="math notranslate nohighlight">\(\mu_r\)</span>) of up to 500 can be achieved.</p></li>
+</ul>
+</div></blockquote>
+<p>Anser EMT utilises 8 transmitter PCB coils in total. Therefore the induced sensor voltage on the sensor is a superposition of voltages due to each of the 8 coils:</p>
+<div class="math notranslate nohighlight">
+\[V(t) = \sum_{n=1}^8 v_i(t)\]</div>
+<p>This amplitude of this composite signal is very weak (of the order of <span class="math notranslate nohighlight">\(\mu V\)</span>) and requires significant amplification before sampling by the data acquisition system (DAQ).</p>
+<p>—</p>
+<p>The sensor that was used to test the Anser EMT was the NDI model 610099 5-DOF sensor. The sensor measures 0.5mm in diameter with a rigid tip of 8mm. The sensor has been electrically characterised with a DC resistance of ~ <span class="math notranslate nohighlight">\(70\Omega\)</span> and series inductance of <span class="math notranslate nohighlight">\(2\text{mH}\)</span>. A parasitic capacitance of <span class="math notranslate nohighlight">\(900\text{pF}\)</span> is also present.  A photograph of the sensor shown below:</p>
+<a class="reference internal image-reference" href="../_images/sensorphoto.png"><img alt="../_images/sensorphoto.png" class="align-center" src="../_images/sensorphoto.png" style="width: 194.0px; height: 170.0px;" /></a>
+</div>
+
+
+              </div>
+              
+              
+              <div class='prev-next-bottom'>
+                
+    <a class='left-prev' id="prev-link" href="field_generator.html" title="previous page">Field generator</a>
+    <a class='right-next' id="next-link" href="sensor_amp.html" title="next page">Sensor Amplifier</a>
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2021, Alex Jaeger.<br/>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.1.2.<br/>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>

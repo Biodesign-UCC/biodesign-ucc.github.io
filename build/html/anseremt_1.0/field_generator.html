@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Field generator &#8212; Biodesign UCC 1.0 documentation</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Tracking Sensor" href="sensor.html" />
+    <link rel="prev" title="AC Amplifier" href="ac_amplifier.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+<a class="navbar-brand" href="../index.html">
+<p class="title">Biodesign UCC</p>
+</a>
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="index.html">
+  Anser EMT v1.0 Documentation
+ </a>
+</li>
+
+    
+    <li class="nav-item">
+        <a class="nav-link nav-external" href="https://github.com/Biodesign-UCC">Group Github<i class="fas fa-external-link-alt"></i></a>
+    </li>
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/Biodesign-UCC/biodesign-ucc.github.io" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/cantillonmurphy" rel="noopener" target="_blank" title="Twitter">
+            <span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+      <div class="navbar-end-item">
+        <form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <p class="caption" role="heading">
+ <span class="caption-text">
+  Contents:
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="design_overview.html">
+   Anser EMT
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="waveform_generator.html">
+   Waveform generator
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ac_amplifier.html">
+   AC Amplifier
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Field generator
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sensor.html">
+   Tracking Sensor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sensor_amp.html">
+   Sensor Amplifier
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="current.html">
+   Current summer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="daq.html">
+   Data Acquisition
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="demodulation.html">
+   Demodulation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pando.html">
+   Position and Orientation Algorithm
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#transmitter-coil">
+   Transmitter coil
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#coil-housing">
+   Coil housing
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="field-generator">
+<h1>Field generator<a class="headerlink" href="#field-generator" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="transmitter-coil">
+<h2>Transmitter coil<a class="headerlink" href="#transmitter-coil" title="Permalink to this headline">¶</a></h2>
+<p>An total of eight transmitter coils are used in the Anser EMT system. Each coil emits a time-varying magnetic field in the 20kHz band. Each coil is connected to a single channel of the Signal Generator AC Amplifer stage.</p>
+<p>The transmitter coil is fabricated as a printed circuit board. Schematic and Gerber files for the coil design are available in the project repository.</p>
+<p>The design for a single PCB coil is shown in the figure below.</p>
+<a class="reference internal image-reference" href="../_images/coildiagram.png"><img alt="../_images/coildiagram.png" class="align-center" src="../_images/coildiagram.png" style="width: 391.2px; height: 275.4px;" /></a>
+<p>The dual-layer PCB shares a single winding between the top and bottom layers. A total of 25 coil turns are present in the design. L1 and L2 denote the PCB via’s where the PCB winding switches layer. The square PCB measures 72mm in length. A photo of a fabricated coil is shown below.</p>
+<a class="reference internal image-reference" href="../_images/coilphoto.png"><img alt="../_images/coilphoto.png" class="align-center" src="../_images/coilphoto.png" style="width: 329.4px; height: 254.39999999999998px;" /></a>
+<p>The magnetic field emitted by each coil is modelled using the current filament method described by Sonntag et al. <a class="footnote-reference brackets" href="#id3" id="id1">1</a>. Each straight-line copper ‘filament’ of the PCB coil is treated as a uniform individual current-carrying conductor. The magnetic field due to each filament is calculated using the Biot-Savart law. The field strength from each individual are added using superposition to provide the total magnetic field of the PCB coil. The diagram below shows a single current-carrying filament with current <span class="math notranslate nohighlight">\(I\)</span> being observed from a point <span class="math notranslate nohighlight">\(P=(x,y,z)\)</span>.</p>
+<a class="reference internal image-reference" href="../_images/biotsavart.png"><img alt="../_images/biotsavart.png" class="align-center" src="../_images/biotsavart.png" style="width: 197.0px; height: 221.0px;" /></a>
+<p>The magnetic field strength at <span class="math notranslate nohighlight">\(P\)</span> due to the filament is given by:</p>
+<div class="math notranslate nohighlight">
+\[{B(r)} = \frac{\mu_0 I}{4 \pi} \sum^n_{i=1} \left(\frac{c_i \times a_i}{|c_i \times a_i|^2}\right) \left(\frac{a_i . c_i}{|c_i|} - \frac{a_i . b_i}{|b_i|}\right)\]</div>
+<p>where <span class="math notranslate nohighlight">\(a_i\)</span> is a vector in the direction of the filament, <span class="math notranslate nohighlight">\(b_i\)</span> is a vector pointing from an observation point <span class="math notranslate nohighlight">\(p\)</span> to the end of the filament, and <span class="math notranslate nohighlight">\(i_c\)</span> is a vector pointing from <span class="math notranslate nohighlight">\(p\)</span> to the start of the filament. <span class="math notranslate nohighlight">\(n\)</span> represents the total number of filaments in the coil, while <span class="math notranslate nohighlight">\(i\)</span>  is the filament under consideration.</p>
+<p>The equation above requires the coordinates of each PCB filament to be precisely known. The square nature of the emitter coils makes this calculation simple to perform. The PCB fabrication parameters (trace length, spacing, trace thickness) are shown in the table below. These parameters are used to iteratively calculate the coordinates of each current filament for N turns of a PCB coil.</p>
+<p>Code for determining the Anser EMT coil filaments is available in the repository. (The first image on this page was generated in Matlab using this code).</p>
+<a class="reference internal image-reference" href="../_images/coilparams.png"><img alt="../_images/coilparams.png" class="align-center" src="../_images/coilparams.png" style="width: 398.0px; height: 141.0px;" /></a>
+</div>
+<div class="section" id="coil-housing">
+<h2>Coil housing<a class="headerlink" href="#coil-housing" title="Permalink to this headline">¶</a></h2>
+<p>The individual emitter PCB coils are set in precisely known locations within the coil housing. These locations are used to generate the magnetic field model for the Anser system. The housing is fabricated from two metal-free polycarbonate halves containing precisely machined square recesses which match the dimensions of the PCB coils. Full schematics for the coil housing can be found in the Anser project repository. The locations of the emitter coils within the recesses of the bottom half of the housing. Cable routing to each coil is also shown:</p>
+<a class="reference internal image-reference" href="../_images/bottomplate.png"><img alt="../_images/bottomplate.png" class="align-center" src="../_images/bottomplate.png" style="width: 540.0px; height: 322.0px;" /></a>
+<p>The final assembly of the coil holder. The coils are ‘sandwiched’ between the two halves. This also acts as a strain relief for the cables:</p>
+<a class="reference internal image-reference" href="../_images/coilassembly.png"><img alt="../_images/coilassembly.png" class="align-center" src="../_images/coilassembly.png" style="width: 658.0px; height: 476.0px;" /></a>
+<p>Full solidworks schematics for the coil holder are available in the project repository. The 4 inner mounting holes are used to secure a Duplo baseplate <a class="footnote-reference brackets" href="#id4" id="id2">2</a> for the purpose of calibration and testing.</p>
+<dl class="footnote brackets">
+<dt class="label" id="id3"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p><a class="reference external" href="https://pure.tue.nl/ws/files/2417049/Metis213041.pdf">https://pure.tue.nl/ws/files/2417049/Metis213041.pdf</a></p>
+</dd>
+<dt class="label" id="id4"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dd><p><a class="reference external" href="https://www.lego.com/en-us/product/lego-duplo-large-green-building-plate-2304">https://www.lego.com/en-us/product/lego-duplo-large-green-building-plate-2304</a></p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+              </div>
+              
+              
+              <div class='prev-next-bottom'>
+                
+    <a class='left-prev' id="prev-link" href="ac_amplifier.html" title="previous page">AC Amplifier</a>
+    <a class='right-next' id="next-link" href="sensor.html" title="next page">Tracking Sensor</a>
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2021, Alex Jaeger.<br/>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.1.2.<br/>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>

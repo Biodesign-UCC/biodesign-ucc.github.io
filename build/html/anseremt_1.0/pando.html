@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position and Orientation Algorithm &#8212; Biodesign UCC 1.0 documentation</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Demodulation" href="demodulation.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+<a class="navbar-brand" href="../index.html">
+<p class="title">Biodesign UCC</p>
+</a>
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="index.html">
+  Anser EMT v1.0 Documentation
+ </a>
+</li>
+
+    
+    <li class="nav-item">
+        <a class="nav-link nav-external" href="https://github.com/Biodesign-UCC">Group Github<i class="fas fa-external-link-alt"></i></a>
+    </li>
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/Biodesign-UCC/biodesign-ucc.github.io" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/cantillonmurphy" rel="noopener" target="_blank" title="Twitter">
+            <span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+      <div class="navbar-end-item">
+        <form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <p class="caption" role="heading">
+ <span class="caption-text">
+  Contents:
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="design_overview.html">
+   Anser EMT
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="waveform_generator.html">
+   Waveform generator
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ac_amplifier.html">
+   AC Amplifier
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="field_generator.html">
+   Field generator
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sensor.html">
+   Tracking Sensor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sensor_amp.html">
+   Sensor Amplifier
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="current.html">
+   Current summer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="daq.html">
+   Data Acquisition
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="demodulation.html">
+   Demodulation
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Position and Orientation Algorithm
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#calibration">
+   Calibration
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#minimisation">
+   Minimisation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#p-o-solver">
+   P&amp;O Solver
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cost-function">
+   Cost function
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="position-and-orientation-algorithm">
+<h1>Position and Orientation Algorithm<a class="headerlink" href="#position-and-orientation-algorithm" title="Permalink to this headline">¶</a></h1>
+<p>The P&amp;O algorithm forms the computational core of the Anser EM tracking systm. The algorithm utilises the demodulated waveform data to resolve the position and angular orientation of the tracking sensor coil. It does this by minimising the error between the waveform data and the magnetic field model of the system using non-linear least-quares solving methods.</p>
+<div class="section" id="calibration">
+<h2>Calibration<a class="headerlink" href="#calibration" title="Permalink to this headline">¶</a></h2>
+<p>This section describes the calibration algorithm used in the Anser EMT system. The approach utilises a nonlinear least squares technique to minimise the error between the magnetic field measurements (from the sensor) and the numerical magnetic field model. Calibration is a necessary procedure since certain system parameters cannot be known to required precisions solely through the system design. Parameters such as amplifier gain and filter performance cannot be directly encapsulated within the magnetic filament model described in section 3a. The result is that each emitter coil produces a time-varying magnetic field, the magnitude of which cannot be determined precisely through analytical means.</p>
+<p>Calibration allows for experimental refinement of the magnetic field model for each emitter coil. This is performed by acquiring a set of testpoints at known locations relative to each coil. The procedure yields a scaling factor for each emitter coil model which accurately encapsulates the otherwise difficult to determine circuit parameters such as amplifier gain and filter attenuation.</p>
+<p>The resulting scaling factors fit the current filament model of the coils to the induced voltage signals received by the sensor coil.</p>
+<p>Consider the magnetic flux measurements at <span class="math notranslate nohighlight">\(m\)</span> testpoints from the <span class="math notranslate nohighlight">\(i_{th}\)</span> coil in the FG to be represented by <span class="math notranslate nohighlight">\(\Phi^i_{meas}\)</span>, and the associated modelled flux at this point too be given by <span class="math notranslate nohighlight">\(\Phi^i_{calc}\)</span>. The objective function to be minimised the error between the two fluxs can by written as:</p>
+<div class="math notranslate nohighlight">
+\[F_i(\kappa_i) = \sum^m_{j=1}  \left(\Phi^i_{meas}(x_j,y_j,z_j,\theta_j,\varphi_j)-\kappa_i\Phi^i_{calc}(x_j,y_j,z_j,\theta_j,\varphi_j)\right)^2\]</div>
+<p>where <span class="math notranslate nohighlight">\(\kappa_i\)</span> is the calibration scaling factor for a particular coil, <span class="math notranslate nohighlight">\(j\)</span> is the current test point, <span class="math notranslate nohighlight">\((x_j,y_j,z_j,\theta_j,\varphi_j)\)</span> is the location and orientation of the sensor at testpoint <span class="math notranslate nohighlight">\(j\)</span> and <span class="math notranslate nohighlight">\(m\)</span> is the total number of testpoints. The scaling factors <span class="math notranslate nohighlight">\(\kappa_i\)</span> scale the magnetic field models of each transmitter coil. These scaling factors are required because the amplitude of each generated magnetic field varies due to the circuitry powering each coil.</p>
+<a class="reference internal image-reference" href="../_images/calibration.png"><img alt="../_images/calibration.png" class="align-center" src="../_images/calibration.png" style="width: 561.2px; height: 186.4px;" /></a>
+<p>The calibration procedure of the Anser system requires 49 testpoints in a 7x7 grid on a Duplo baseplate.</p>
+</div>
+<div class="section" id="minimisation">
+<h2>Minimisation<a class="headerlink" href="#minimisation" title="Permalink to this headline">¶</a></h2>
+<p>The minimisation process aims to minimise each <span class="math notranslate nohighlight">\(F_i\)</span>. Once complete, the resulting value of <span class="math notranslate nohighlight">\(\kappa_i\)</span> is the calibration factor for the <span class="math notranslate nohighlight">\(i^{th}\)</span> coil. A vector of 8 calibration values is produced for the Anser EMT system. Details of the minimisation process can be read in the comments of the Anser Matlab code. The calibration procedure and instructions regarding testpoint acquisition can be found in the system manual.</p>
+</div>
+<div class="section" id="p-o-solver">
+<h2>P&amp;O Solver<a class="headerlink" href="#p-o-solver" title="Permalink to this headline">¶</a></h2>
+<p>The P&amp;0 solver takes the demodulated sensor data and attempts to fit the signal strengths to the calibrated magnetic field model. The vector of values <span class="math notranslate nohighlight">\((x,y,z,\theta,\varphi)\)</span> which minimise the error between the measurements and model are the position and orientation of the sensor.</p>
+<p>The P&amp;O solver can be thought of as a dual to the calibration procedure. During the calibration the magnetic field model it fit using a set of <strong>known</strong> <span class="math notranslate nohighlight">\((x,y,z,\theta,\varphi)\)</span> positions to produce a set of scaling factors. The P&amp;O solver utilises these scaling factors solve for a set of <strong>unknown</strong> test points in the field of operation.</p>
+<p>The block diagram below shows a high level view of the solving process. Starting from an initial guess position and orientation <span class="math notranslate nohighlight">\((0,0,z_{init},0,0)\)</span> the nonlinear least squares algorithm compares the modelled flux <span class="math notranslate nohighlight">\(\Phi\)</span> from coil <span class="math notranslate nohighlight">\(i\)</span> (of <span class="math notranslate nohighlight">\(m\)</span> total coils) with that of the real sensor. The algorithm iteratively modifies the initial guess until the difference between the <span class="math notranslate nohighlight">\(\Phi_{calc}\)</span> and <span class="math notranslate nohighlight">\(\Phi_{meas}\)</span> is minimised.
+The <span class="math notranslate nohighlight">\((x,y,z,\theta,\varphi)\)</span> that simulataneously minimises the <span class="math notranslate nohighlight">\(\Phi\)</span> error for all <span class="math notranslate nohighlight">\(m\)</span> emitter coils is the calculated resolved sensor position.</p>
+<a class="reference internal image-reference" href="../_images/solver.png"><img alt="../_images/solver.png" class="align-center" src="../_images/solver.png" style="width: 582.0px; height: 182.0px;" /></a>
+</div>
+<div class="section" id="cost-function">
+<h2>Cost function<a class="headerlink" href="#cost-function" title="Permalink to this headline">¶</a></h2>
+<p>In order for minimisation to take place on must provide an objective function to the solving algorithm. The objective function to be minimised looks similar to the calibration objective function: a sum of squared magnetic flux errors due to each. For a particular sensor acquisition at an unknown point in space <span class="math notranslate nohighlight">\(j\)</span> the objective function to minimise is given by:</p>
+<div class="math notranslate nohighlight">
+\[F(x,y,z,\theta,\varphi) = \sum_{i=1}^8(\Phi_{meas}^i-\kappa_i\Phi_{calc}^i(x,y,z,\theta,\varphi))^2\]</div>
+<p>where <span class="math notranslate nohighlight">\(i\)</span> is the index of the emitter coil under consideration, <span class="math notranslate nohighlight">\(\Phi_{meas}^i\)</span> is the flux contribution from emitter coil <span class="math notranslate nohighlight">\(i\)</span> and <span class="math notranslate nohighlight">\(\Phi_{calc}^i\)</span> is the calculated flux contribution from coil <span class="math notranslate nohighlight">\(i\)</span> at position <span class="math notranslate nohighlight">\((x,y,z,\theta,\varphi)\)</span>. In this objective function, the vector <span class="math notranslate nohighlight">\((x,y,z,\theta,\varphi)\)</span> is the variable. The nonlinear solver in Matlab iteratively tweaks this vector in order to minimise the sum of the magnetic field errors due to each coil. The resulting sum of these errors is the cost function <span class="math notranslate nohighlight">\(F\)</span>. The vector of <span class="math notranslate nohighlight">\((x,y,z,\theta,\varphi)\)</span> which results in the minimisation of <span class="math notranslate nohighlight">\(F\)</span> is the position and orientation of the sensor at the point <span class="math notranslate nohighlight">\(j\)</span> <span class="math notranslate nohighlight">\((x_j,y_j,z_j,\theta_j,\varphi_j)\)</span>.</p>
+<p>Details of the implementation, initial conditions and solver parameters can be read in the Matlab code for the P&amp;O algorithm.</p>
+</div>
+</div>
+
+
+              </div>
+              
+              
+              <div class='prev-next-bottom'>
+                
+    <a class='left-prev' id="prev-link" href="demodulation.html" title="previous page">Demodulation</a>
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2021, Alex Jaeger.<br/>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.1.2.<br/>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>

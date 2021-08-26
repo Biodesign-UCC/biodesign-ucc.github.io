@@ -1,0 +1,424 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demodulation &#8212; Biodesign UCC 1.0 documentation</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Position and Orientation Algorithm" href="pando.html" />
+    <link rel="prev" title="Data Acquisition" href="daq.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+<a class="navbar-brand" href="../index.html">
+<p class="title">Biodesign UCC</p>
+</a>
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="index.html">
+  Anser EMT v1.0 Documentation
+ </a>
+</li>
+
+    
+    <li class="nav-item">
+        <a class="nav-link nav-external" href="https://github.com/Biodesign-UCC">Group Github<i class="fas fa-external-link-alt"></i></a>
+    </li>
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/Biodesign-UCC/biodesign-ucc.github.io" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/cantillonmurphy" rel="noopener" target="_blank" title="Twitter">
+            <span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+      <div class="navbar-end-item">
+        <form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <p class="caption" role="heading">
+ <span class="caption-text">
+  Contents:
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="design_overview.html">
+   Anser EMT
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="waveform_generator.html">
+   Waveform generator
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ac_amplifier.html">
+   AC Amplifier
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="field_generator.html">
+   Field generator
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sensor.html">
+   Tracking Sensor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sensor_amp.html">
+   Sensor Amplifier
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="current.html">
+   Current summer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="daq.html">
+   Data Acquisition
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Demodulation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pando.html">
+   Position and Orientation Algorithm
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#synchronous-demodulation">
+   Synchronous demodulation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#asynchronous-demodulation">
+   Asynchronous demodulation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#demodulation-implementation">
+   Demodulation implementation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#finite-impulse-response-fir-filter">
+   Finite impulse response (FIR filter)
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="demodulation">
+<h1>Demodulation<a class="headerlink" href="#demodulation" title="Permalink to this headline">¶</a></h1>
+<p>Two modulation schemes are discussed in this section, synchronous and asynchronous methods are discussed. Asynchronous demodulation is the chosen scheme as it provides more information regarding the orientation of the sensor.</p>
+<p>In order to calculate the amplitude of the AC magnetic field experienced by the sensor many techniques are available. Generally, the signals of interest are small in amplitude with relatively large noise levels as well as interference from the other transmitting channels. The most common method to extract the signals of this type is synchronous demodulation, also known as synchronous detection or lock-in amplification</p>
+<div class="section" id="synchronous-demodulation">
+<h2>Synchronous demodulation<a class="headerlink" href="#synchronous-demodulation" title="Permalink to this headline">¶</a></h2>
+<p>Synchronous demodulation is a method for extracting information from an AC carrier signal. Although asynchronous demodulation is used in Anser, synchronous demodulation illustrates basic concepts that are used in the asynchronous design.</p>
+<p>The amplitude and phase of an AC signal can be calculated through multiplication by a reference signal that is locked in frequency with the original signal. The multiplication by the reference signal, shifts the signal down to a lower frequency, typically DC, which is then easier to accurately measure. The “locking” of frequencies can be implemented in many ways although the simplest is to use the source of the signal as a reference.</p>
+<p>Consider an input signal:</p>
+<div class="math notranslate nohighlight">
+\[v(t)=V\sin(\omega t + \varphi)\]</div>
+<p>where <span class="math notranslate nohighlight">\(V\)</span> is the modulating signal we wish to extract. The amplitude and phase of this signal can be determined by multiplying by two reference signals at the same frequency:</p>
+<div class="math notranslate nohighlight">
+\[Y(t) = \sin(\omega t)
+X(t) = \cos(\omega t)\]</div>
+<p>This multiplication result in two quadrature signals:</p>
+<div class="math notranslate nohighlight">
+\[v_y(t) = v(t)Y(t) = \frac{V}{2}[\cos(\varphi)-\cos(2\omega t + \varphi)]
+v_x(t) = v(t)X(t) = \frac{V}{2}[\sin(\varphi)-\sin(2\omega t + \varphi)]\]</div>
+<p>The DC component of the signal is extracted by using an appropriate low-pass filter. The resulting DC values are:</p>
+<div class="math notranslate nohighlight">
+\[v'_y(t) = \frac{v}{2}\cos(\varphi)
+v'_x(t) = \frac{v}{2}\sin(\varphi)\]</div>
+<p>The amplitude of the modulating signal <span class="math notranslate nohighlight">\(V\)</span> can be found using:</p>
+<div class="math notranslate nohighlight">
+\[V = 2\sqrt{(v'_x(t)^2 + v'_y(t)^2)}\]</div>
+<p>The phase of the signal can be found using:</p>
+<div class="math notranslate nohighlight">
+\[\varphi = \arctan\left(\frac{v'_y(t)}{v'_x(t)}\right)\]</div>
+<p>Demodulating using this technique requires <span class="math notranslate nohighlight">\(Y(t)\)</span> and <span class="math notranslate nohighlight">\(X(t)\)</span> be generated from the reference source. This requires each of the eight coil voltages (20.5kHz, 21.5kHz…) to be individually sampled for processing, requiring an analogue to digital converter with a very high aggragate sampling frequency. Instead, simulated reference signals may be used to generate <span class="math notranslate nohighlight">\(Y(t)\)</span> and <span class="math notranslate nohighlight">\(X(t)\)</span> which results in asynchronous demodulation.</p>
+</div>
+<div class="section" id="asynchronous-demodulation">
+<h2>Asynchronous demodulation<a class="headerlink" href="#asynchronous-demodulation" title="Permalink to this headline">¶</a></h2>
+<p>Asynchronous demodulation uses simulated reference signals to generate the quadrature signals for demodulation. These simulated signals are <strong>not</strong> locked in phase with the signal to be demodulated and can experience frequency mismatch. This results in an increase in the number calculations required when determining the phase and magnitude of the signal of interest, but reduces the number of signals required for sampling.</p>
+<p>Consider a tracking system consisting of N emitting coils, each coil carrying a current component of the following form:</p>
+<div class="math notranslate nohighlight">
+\[i_i(t) = I_i\sin(\omega_i t + \varphi_{I_i})\]</div>
+<p>where <span class="math notranslate nohighlight">\(I_i\)</span> is the amplitude of the <span class="math notranslate nohighlight">\(i_{th}\)</span> emitting coil waveform, <span class="math notranslate nohighlight">\(\omega_i\)</span> is the excitation frequency and <span class="math notranslate nohighlight">\(\varphi_i\)</span> is the current phase relative to an arbitrary reference. Summing all N current waveforms results in:</p>
+<div class="math notranslate nohighlight">
+\[i(t) = \sum^N_{i=1} I_i\sin(\omega_i t + \varphi_{I_{i}})\]</div>
+<p>The induced voltage on the sensor is a sum of the voltages induced by the coil currents:</p>
+<div class="math notranslate nohighlight">
+\[v(t) = \sum^N_{i=1} V_i\sin(\omega_i t + \varphi_{V_{i}})\]</div>
+<p>where <span class="math notranslate nohighlight">\(V_i\)</span> is the amplitude of the induced voltage component and <span class="math notranslate nohighlight">\(\varphi_{V_i}\)</span> is the associated phase. Each frequency component of the voltage signal is extracted using two reference signals:</p>
+<div class="math notranslate nohighlight">
+\[Y_i = \sin(\omega_{ri} t)
+X_i = \cos(\omega_{ri} t)\]</div>
+<p>where <span class="math notranslate nohighlight">\(\omega_{ri}\)</span> is the frequency of the simulated reference signal. This demodulation results in the amplitudes and phases of all the frequency components relative to the simulated reference signal as follows:</p>
+<div class="math notranslate nohighlight">
+\[\mathbf{V} = [V_1,V_2...V_n]
+\mathbf{I} = [I_1,I_2...I_n]
+\mathbf{\varphi_V} = [\varphi_{V_1},\varphi_{V_2}...\varphi_{V_n}]
+\mathbf{\varphi_I} = [\varphi_{I_1},\varphi_{I_2}...\varphi_{I_n}]\]</div>
+<p>By subtracting the individual phases from each other the relative phase angle between the sensor voltage and coil current waveforms can be found:</p>
+<div class="math notranslate nohighlight">
+\[\Delta\mathbf{\varphi} = \mathbf{\varphi_V} - \mathbf{\varphi_I}\]</div>
+<p>The sign of this phase information indicates the axial orientation of the electromagnetic sensor with respect to the magnetic field.</p>
+<p>With a simulated reference signal it can be difficult to lock the frequency to the signal source without the use of phase locking techniques. In our system this often results in a small mismatch in frequency since the simulated reference signal for a particular coil <span class="math notranslate nohighlight">\(\omega_{ri}\)</span> is slightly different from the frequency to be demodulated <span class="math notranslate nohighlight">\(\omega_i\)</span> since they are not locked. This results in a <span class="math notranslate nohighlight">\(\Delta\omega=\omega_{ri} - \omega_r\)</span> causing a low frequency oscillation in the demodulated signal, which would not be present in synchronous demodulation.</p>
+<p>To demonstrate this, consider a single frequency where the coil current and sensor voltage waveforms are given by:</p>
+<div class="math notranslate nohighlight">
+\[i(t) = I\sin(\omega t + \varphi_I)
+v(t) = V\sin(\omega t + \varphi_V)\]</div>
+<p>The simulated reference signals used for demodulation are given by:</p>
+<div class="math notranslate nohighlight">
+\[Y(t) = \sin(\omega_r t)
+X(t) = \cos(\omega_r t)\]</div>
+<p>Starting with the sensor voltage <span class="math notranslate nohighlight">\(v(t)\)</span>, we multiply by the reference signals just as in the synchronous case to produce:</p>
+<div class="math notranslate nohighlight">
+\[v(t)Y(t) = \frac{V}{2}[\cos((\omega-\omega_r) + \varphi_V) - \cos((\omega+\omega_r) + \varphi_V)]
+v(t)X(t) = \frac{V}{2}[\sin((\omega-\omega_r) + \varphi_V) - \sin((\omega+\omega_r) + \varphi_V)]\]</div>
+<p>Extracting the low frequency components using a low-pass filter yields two quadrature voltage signals:</p>
+<div class="math notranslate nohighlight">
+\[v_x=\frac{V}{2}\sin(\Delta\omega t + \varphi_V)
+v_y=\frac{V}{2}\cos(\Delta\omega t + \varphi_V)\]</div>
+<p>where the difference in frequency is given by:</p>
+<div class="math notranslate nohighlight">
+\[\Delta\omega = \omega-\omega_r\]</div>
+<p>These signals are close to DC since they oscillate at a frequency of <span class="math notranslate nohighlight">\(\Delta\omega\)</span> The amplitude <span class="math notranslate nohighlight">\(V\)</span> can be determined as in the synchronous case using:</p>
+<div class="math notranslate nohighlight">
+\[V = 2\sqrt{(v_x^2 + v_y^2)}\]</div>
+<p>The phase can be determined using:</p>
+<div class="math notranslate nohighlight">
+\[\gamma_V(t) = \arctan\frac{v_x}{v_y} = \Delta\omega +\varphi_V\]</div>
+<p>Its clear that the phase has a time dependency. This is due to the frequency mismatch of the carrier and reference signals. In order to remove this dependency, the same demodulation procedure above is performed to the coil current waveform <span class="math notranslate nohighlight">\(i(t)\)</span> to produce <span class="math notranslate nohighlight">\(I\)</span> and <span class="math notranslate nohighlight">\(\gamma_I\)</span>.  Subtracting the phase component <span class="math notranslate nohighlight">\(\gamma_V\)</span> from <span class="math notranslate nohighlight">\(\gamma_I\)</span> gives the constant relative phase angle between the two waveforms:</p>
+<div class="math notranslate nohighlight">
+\[\gamma_V -  \gamma_I = \varphi_V-\varphi_I\]</div>
+<p>This ‘double demodulation’ allows both the accurate retrieval of the amplitude and phase of each of the induced sensor voltages. Implementation details of how this demodulation is achieved  are described in the next section.</p>
+</div>
+<div class="section" id="demodulation-implementation">
+<h2>Demodulation implementation<a class="headerlink" href="#demodulation-implementation" title="Permalink to this headline">¶</a></h2>
+<p>The asynchronous demodulation process takes place in Matlab using an efficient matrix calculation technique. This method involves recording a number of samples of each signal of interest. This has the advantage of reduced solving time since all samples are available at the time of calculation. This is in contrast to real-time processing where samples are gathered and processed one-by-one in turn.</p>
+<p>The signals of interest we wish to sample are:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>The induced voltage on the 5-DOF sensor coil(s)</p></li>
+<li><p>The composite coil current signal</p></li>
+</ol>
+</div></blockquote>
+<p>Initially we consider the induced voltage on a single sensor that has been discretised through sampling:</p>
+<div class="math notranslate nohighlight">
+\[x[n] = \sum_{i=1}^N V_i\sin\left(\frac{2 \pi f_i n}{f_s}+\varphi_i\right)\]</div>
+<p>where N is the number of frequency of interest (N = 8, one frequency per emitter coil), <span class="math notranslate nohighlight">\(f_i\)</span> is the frequency of interest in hertz, <span class="math notranslate nohighlight">\(f_s\)</span> is the sampling frequency of the DAQ, <span class="math notranslate nohighlight">\(V_i\)</span> is the amplitude and <span class="math notranslate nohighlight">\(\varphi_i\)</span> is an associated phase shift. Collecting and string <span class="math notranslate nohighlight">\(p\)</span> points results in a vector <span class="math notranslate nohighlight">\(\mathbf{X}\)</span> containing <span class="math notranslate nohighlight">\(p\)</span> samples:</p>
+<div class="math notranslate nohighlight">
+\[\mathbf{X}=\left[x[0],x[1] ... x[p-1]\right]\]</div>
+<p>In the previous section asynchronous demodulation was discussed. The first step of the demodulation involves multiplying the sampled signal by two sinusoids <span class="math notranslate nohighlight">\(Y(n)=\sin(2\pi f_{ri} n)\)</span> and <span class="math notranslate nohighlight">\(X(n)=\cos(2\pi f_{ri} n)\)</span>, where <span class="math notranslate nohighlight">\(f_{ri}\)</span> is the simulated reference signal close in frequency to <span class="math notranslate nohighlight">\(f_i\)</span> Using Euler’s relation we combine <span class="math notranslate nohighlight">\(X(n)\)</span> and <span class="math notranslate nohighlight">\(Y(n)\)</span> into a single discrete complex sinusoid:</p>
+<div class="math notranslate nohighlight">
+\[\cos(2\pi f_{ri}n) + j\sin(2\pi f_{ri} n) = e^{\frac{2 \pi f_{ri} j n }{f_s}}\]</div>
+<p>where <span class="math notranslate nohighlight">\(j = \sqrt{-1}\)</span> This complex exponential encapsulates the two quadrature signal components required for demodulation. Given the <span class="math notranslate nohighlight">\(N\)</span> emitter coil frequencies, <span class="math notranslate nohighlight">\(N\)</span> complex exponentials are required for the demodulation of each frequency. A <span class="math notranslate nohighlight">\(p \times N\)</span>  matrix of complex exponentials is created  such that when pre-multiplied by <span class="math notranslate nohighlight">\(\mathbf{X}\)</span> results in a vector of voltage magnitude:</p>
+<div class="math notranslate nohighlight">
+\[\mathbf{E} = \begin{bmatrix}
+        \epsilon_i[0]  &amp; \dots &amp; \epsilon_N[0] \newline
+        \vdots&amp; \ddots &amp; \vdots \newline
+        \epsilon_i[p-1] &amp; \dots &amp; \epsilon_N[p-1]
+\end{bmatrix}\]</div>
+<p>where</p>
+<div class="math notranslate nohighlight">
+\[\epsilon_i[n]=e^{\frac{2 \pi f_{ri} j n }{f_s}}\]</div>
+<p>The row vector of demodulated voltages is given by premultiplying <span class="math notranslate nohighlight">\(\mathbf{E}\)</span> by the row vector of <span class="math notranslate nohighlight">\(p\)</span> samples:</p>
+<div class="math notranslate nohighlight">
+\[\mathbf{Y} = [\widetilde{V}_1 ... \widetilde{V}_N] = 2\mathbf{X}\mathbf{E}\]</div>
+<p><span class="math notranslate nohighlight">\(\mathbf{Y}\)</span> is a complex valued row-vector due to the presence of <span class="math notranslate nohighlight">\(j\)</span> in the complex exponential calculation. The absolute value of each entry in <span class="math notranslate nohighlight">\(\mathbf{Y}\)</span> is the amplitude received frequency of interest, <span class="math notranslate nohighlight">\(V_i\)</span>.</p>
+</div>
+<div class="section" id="finite-impulse-response-fir-filter">
+<h2>Finite impulse response (FIR filter)<a class="headerlink" href="#finite-impulse-response-fir-filter" title="Permalink to this headline">¶</a></h2>
+<p>A finite impulse response filter is implemented as part of the demodulation step. This low pass FIR filter eliminates unwanted frequency components from the input sample stream <span class="math notranslate nohighlight">\(\mathbf{X}\)</span> Consider an FIR filter denoted by <span class="math notranslate nohighlight">\(f_i\)</span> with <span class="math notranslate nohighlight">\(p\)</span> coefficients (textit{i.e.} equal to the number of input samples). The output of such a filter can be represented as:</p>
+<div class="math notranslate nohighlight">
+\[p[n] = \sum_{i=0}^{p-1}f_ix[n-i]\]</div>
+<p>where <span class="math notranslate nohighlight">\(p[n]\)</span> is the filtered sample vector and <span class="math notranslate nohighlight">\(f_i\)</span> is a single filter tap coefficient. Each filter coefficient can be represented by a single matrix <span class="math notranslate nohighlight">\(F\)</span> as shown below:</p>
+<div class="math notranslate nohighlight">
+\[F = [f_0, f_1, f_2 \dots f_{p-1}]\]</div>
+<p>The FIR filter can be applied to the demodulator by scaling each input sample of <span class="math notranslate nohighlight">\(X\)</span> with the corresponding FIR coefficient given by <span class="math notranslate nohighlight">\(F\)</span> This is achieved using an element by element multiplication:</p>
+<div class="math notranslate nohighlight">
+\[\mathbf{Y} = 2(\mathbf{X}\circ \mathbf{F})\mathbf{E}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\circ\)</span> represents the element-wise multiplication operator.</p>
+<p>The amplitude of each frequency component can be determined by calculating the absolute value of <span class="math notranslate nohighlight">\(\mathbf{Y}\)</span>, which is a complex quantity. The phase of <span class="math notranslate nohighlight">\(\mathbf{Y}\)</span> can be found using the complex argument of <span class="math notranslate nohighlight">\(Y\)</span></p>
+<div class="math notranslate nohighlight">
+\[[V_1 V_2 \dots V_N] = |\mathbf{Y}|
+[\varphi_1, \varphi_2 \dots \varphi_N] = \arg(\mathbf{Y})\]</div>
+<p>The implementation of this calculation can be found in the Matlab code provided in the OSF file repository.</p>
+</div>
+</div>
+
+
+              </div>
+              
+              
+              <div class='prev-next-bottom'>
+                
+    <a class='left-prev' id="prev-link" href="daq.html" title="previous page">Data Acquisition</a>
+    <a class='right-next' id="next-link" href="pando.html" title="next page">Position and Orientation Algorithm</a>
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2021, Alex Jaeger.<br/>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.1.2.<br/>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>
