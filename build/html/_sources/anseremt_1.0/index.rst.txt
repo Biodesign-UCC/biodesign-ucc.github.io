@@ -1,6 +1,6 @@
 
 
-Anser EMT 1.0 Docs
+Anser EMT
 ============================
 
 .. toctree::
