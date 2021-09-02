@@ -162,6 +162,11 @@
    Making Changes
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#useful-tools">
+   Useful Tools
+  </a>
+ </li>
 </ul>
 
 </nav>
@@ -217,15 +222,32 @@
 </div>
 <div class="section" id="making-changes">
 <h2>Making Changes<a class="headerlink" href="#making-changes" title="Permalink to this headline">¶</a></h2>
-<p>Additions, changes and updates to the existing repositories are encouraged. Any updates to software and hardware designs can then be easily accessed by the group. In order to submit a change to a repository you should:</p>
+<p>Additions, changes and updates to the existing repositories are encouraged. In order to submit a change to a repository you should:</p>
 <ol class="arabic simple">
-<li><p>Fork the repository using through GitHub. This will create a copy of the repository in question under your own GitHub account name.</p></li>
+<li><p>Fork the repository using through GitHub. This will create a copy of the repository under your own GitHub account.</p></li>
 <li><p>Clone the forked repository to your local PC.</p></li>
 <li><p>Make the changes to the repository (source code edits, design file changes etc.). Ensure that any modificationw contain sufficient comments particularly in the case of source code changes.</p></li>
 <li><p>Commit the changes to the repository adding a summary of your changes to the Git commit message.</p></li>
 <li><p>Submit a pull request through GitHub. This will alert the repository administrator that a change is being proposed and highlights the changes being made.</p></li>
 <li><p>The administrator will review the pull request and will merge your changes into the original base repository. Everyone in the group will then be able to access your changes.</p></li>
 </ol>
+<p>Updates to software and hardware designs can be easily accessed by the group.</p>
+</div>
+<div class="section" id="useful-tools">
+<h2>Useful Tools<a class="headerlink" href="#useful-tools" title="Permalink to this headline">¶</a></h2>
+<p>Here is a list of some useful software tools used by the group.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://git-scm.com/download/win">Git</a> is the version control tool used in the group. This link is for the windows version.</p></li>
+<li><p><a class="reference external" href="https://www.slicer.org/">3D Slicer</a> - is a visualisation tool for processing and viewing medical imaging and live optical and EM tracking data through OpenIGTLink.</p></li>
+<li><p><a class="reference external" href="http://openigtlink.org/">OpenIGTLink</a> - is a network protocol for transferring image and position tracking data. It is used extensively in Anser EMT for ineterfacing with other software. The language of the core library is C++.</p></li>
+<li><p><a class="reference external" href="https://github.com/Danielhiversen/pyIGTLink">PyIGTLink</a> is an implementation of the OpenIGTLink protocol written in Python.</p></li>
+<li><p><a class="reference external" href="https://github.com/PlusToolkit/PlusMatlabUtils/tree/master/MatlabOpenIGTLinkInterface">OpenIGTLink MatlabUtils</a> is an implementation of the OpenIGTLink protocol written in Matlab.</p></li>
+<li><p><a class="reference external" href="https://plustoolkit.github.io/">PLUS toolkit</a> is a software package for communicating with many commercial optical and magnetic tracking systems. e.g. the NDI Polaris and Aurora systems.</p></li>
+<li><p><a class="reference external" href="https://www.mathworks.com/matlabcentral/fileexchange/26186-absolute-orientation-horn-s-method">Absolute Orientation</a> is a implementation of Horns Method for performing rigid registration between two sets of corresponding points in different reference frames. A useful function when evaluting the accuracy of tracking systems.</p></li>
+<li><p><a class="reference external" href="https://uk.mathworks.com/matlabcentral/fileexchange/34869-distance2curve">distance2curve</a>  is a matlab function that finds the closest point on a curve from some given point in space. The function is capable of interpolation.</p></li>
+<li><p><a class="reference external" href="https://inkscape.org/">Inkscape</a> is an open source tool for producing high quality vector graphics and digrams for papers.</p></li>
+<li><p><a class="reference external" href="https://www.femm.info/wiki/HomePage">Finite Element Method Magnetics</a> (FEMM) is an open source field solver and is capable of solving 2D planar and axisymmetric magnetiostation and electrostatic problems. It is also capable of performing heatflow simulations.</p></li>
+</ul>
 </div>
 </div>
 
