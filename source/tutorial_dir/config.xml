@@ -1,0 +1,82 @@
+<PlusConfiguration version="2.1">
+<DataCollection StartupDelaySec="1.0" >
+<DeviceSet
+Name="PlusServer: NDI Polaris tracker with passive markers"
+Description="Broadcasting tool tracking data through OpenIGTLink
+For NDI Polaris passive marker starting kit: Tool (8700338), Stylus (8700340), Reference (8700449)"
+/>
+
+<!-- The IP Address and Port may need to be changed depending on the device configuration -->
+<Device
+Id="TrackerDevice"
+Type="PolarisTracker"
+NetworkHostname="169.254.61.83" 
+NetworkPort="8765"
+ToolReferenceFrame="Tracker" >
+
+<!--The SROM files containing the definitions of the tools you wish to track. Each tool is given user 
+defined ID, such as Tool, Stylus, Reference, depending on how the tool is being used-->
+<DataSources> 
+<DataSource Type="Tool" Id="Tool" RomFile="NdiToolDefinitions/8700338.rom" />
+<DataSource Type="Tool" Id="Stylus" RomFile="NdiToolDefinitions/8700340.rom" />
+<DataSource Type="Tool" Id="Reference" RomFile="NdiToolDefinitions/8700449.rom" />
+</DataSources>
+
+<!-- Create an output channel and list the IDs of the DataSources we wish to put into this channel -->
+<OutputChannels>
+<OutputChannel Id="TrackerStream" >
+<DataSource Id="Tool"/>
+<DataSource Id="Stylus"/>
+<DataSource Id="Reference"/>
+</OutputChannel>
+</OutputChannels>
+</Device>
+
+<!-- Create an virtual capture device to save the streamed data to a file in the background -->
+<Device
+Id="CaptureDevice"
+Type="VirtualCapture"
+BaseFilename="RecordingTest.igs.nrrd"
+EnableFileCompression="TRUE"
+EnableCapturingOnStart="TRUE" >
+<InputChannels>
+<InputChannel Id="TrackerStream" />
+</InputChannels>
+</Device>
+
+<!-- Create a user defined transformation matrix and apply it to the Stylus. Typically this 
+tranform is obtained from a Pivot Calibration (see tutorial). For the stylus, this transform establishes
+the location and orientation of the tip relative to the tracked origin of the reflective markers on the stylus. -->
+</DataCollection>
+<CoordinateDefinitions>
+<Transform From="StylusTip" To="Stylus"
+Matrix="
+1 0 0 0
+0 -1 0 0
+0 0 1 0
+0 0 0 1"
+Error="0.554951" Date="012617_105449" />
+</CoordinateDefinitions>
+
+
+<!-- Create an OpenIGTLink server to stream data to connected clients. -->
+<PlusOpenIGTLinkServer
+MaxNumberOfIgtlMessagesToSend="1"
+MaxTimeSpentWithProcessingMs="50"
+ListeningPort="18944"
+SendValidTransformsOnly="true"
+OutputChannelId="TrackerStream" >
+<DefaultClientInfo>
+<MessageTypes>
+<Message Type="TRANSFORM" />
+</MessageTypes>
+<TransformNames>
+<!-- The transform StylusTipToReference is chosen as the only output, where the Reference is defined by 
+another reflective marker object defined at the beginning of this config file. If you wish to get 
+transform relative to the Vega camera's own coordinate system then StylusTipToTracker would be used instead, since Tracker is defined as the world origin at the top of the config file. -->
+<Transform Name="StylusTipToReference">
+</TransformNames>
+</DefaultClientInfo>
+</PlusOpenIGTLinkServer>
+
+</PlusConfiguration>

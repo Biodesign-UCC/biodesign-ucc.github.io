@@ -19,8 +19,10 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Biodesign UCC'
-copyright = '2021, Alex Jaeger'
-author = 'Alex Jaeger'
+copyright = '2021, Biodesign-UCC'
+author = 'Biodesign-UCC'
+
+html_logo = "_static/group-logo.svg"
 
 # The full version, including alpha/beta/rc tags
 release = '1.0'
@@ -32,7 +34,12 @@ release = '1.0'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+'sphinx_panels',
+'sphinxcontrib.bibtex',
+'sphinxcontrib.youtube',
 ]
+bibtex_bibfiles = ['refs.bib']
+bibtex_default_style = 'unsrtalpha'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
