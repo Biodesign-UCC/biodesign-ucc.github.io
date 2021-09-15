@@ -25,7 +25,7 @@ PhD & Master's students
 
 
 Alumni
-
+* Philip Desmond
 * Fabian Trauzettel
 * Conor O'Shea
 * Pietro Nardelli

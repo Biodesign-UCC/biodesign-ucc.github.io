@@ -92,6 +92,7 @@ Quicklinks
    people
    publications
    videos
+   tutorials
 
 
 

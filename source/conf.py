@@ -22,7 +22,7 @@ project = 'Biodesign UCC'
 copyright = '2021, Biodesign-UCC'
 author = 'Biodesign-UCC'
 
-html_logo = "_static/group-logo.svg"
+html_logo = "_static/group-logo.png"
 
 # The full version, including alpha/beta/rc tags
 release = '1.0'

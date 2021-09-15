@@ -37,7 +37,7 @@ Camera Setup
 Live Tracking with PLUS Toolkit
 -------------------------------
 
-The PLUS Toolkit `https://plustoolkit.github.io/ <https://plustoolkit.github.io/>`_ is an open-source package for connecting to 3rd party navigation devices. The package creates a *server* to which end-user *client* applications such as `Matlab https://github.com/PlusToolkit/PlusMatlabUtils/tree/master/MatlabOpenIGTLinkInterface>`_ and `3DSlicer <https://www.slicer.org/>`_ can connect.
+The PLUS Toolkit `https://plustoolkit.github.io/ <https://plustoolkit.github.io/>`_ is an open-source package for connecting to 3rd party navigation devices. The package creates a *server* to which end-user *client* applications such as `Matlab <https://github.com/PlusToolkit/PlusMatlabUtils/tree/master/MatlabOpenIGTLinkInterface>`_ and `3DSlicer <https://www.slicer.org/>`_ can connect.
 
 The following tuturial describes how to set up the PLUS toolkit with the NDI Polaris Vega.
 
