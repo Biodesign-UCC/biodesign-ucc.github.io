@@ -35,7 +35,7 @@ Software repositories:
     **Anser C++**
     ^^^^^^^^^^^^^^
 
-    Follow this steps to use Git and gain access to the groups software and hardware repositories.
+    Software repository for the C++ implementation of the Anser EMT system.
 
     +++
 
@@ -50,7 +50,7 @@ Software repositories:
     **Anser Python**
     ^^^^^^^^^^^^^
 
-    Tutorials for getting started with various hardware and software devices in the lab
+    Software repository for the Python implementation of the Anser EMT system.
 
     +++
 
@@ -71,7 +71,7 @@ Software repositories:
     **Anser Matlab**
     ^^^^^^^^^^^^^^
 
-    Follow this steps to use Git and gain access to the groups software and hardware repositories.
+    Software repository for the Matlab implementation of the Anser EMT system.
 
     +++
 
