@@ -27,6 +27,7 @@ html_logo = "_static/group-logo.png"
 # The full version, including alpha/beta/rc tags
 release = '1.0'
 
+html_title = 'Biodesign UCC Homepage'
 
 # -- General configuration ---------------------------------------------------
 
