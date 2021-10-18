@@ -23,9 +23,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.061871843"
-     inkscape:cx="1659.212"
-     inkscape:cy="410.95083"
+     inkscape:zoom="0.12374369"
+     inkscape:cx="2797.0371"
+     inkscape:cy="588.71065"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -47,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -58,7 +58,7 @@
      transform="translate(884.37126,-11.169702)">
     <g
        id="g844"
-       transform="matrix(3.8659939,0,0,3.8659939,-283.4685,-238.66479)">
+       transform="matrix(3.5789358,0,0,3.5789358,-266.08025,-205.14697)">
       <path
          style="fill:#da4b4b;fill-opacity:1;stroke:#000000;stroke-width:1.233;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="m 84.129176,65.452274 38.569584,66.713256 -5.3337,3.97399 -42.95104,-65.400873 z"
@@ -104,14 +104,14 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:190.329px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:Calibri;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:4.75824"
-       x="-899.21692"
-       y="220.28891"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:176.197px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:Calibri;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:4.40493"
+       x="-836.10803"
+       y="219.72847"
        id="text848"><tspan
          sodipodi:role="line"
          id="tspan846"
-         x="-899.21692"
-         y="220.28891"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Trade Gothic LT Std';-inkscape-font-specification:'Trade Gothic LT Std';stroke-width:4.75824">Biodesign      UCC</tspan></text>
+         x="-836.10803"
+         y="219.72847"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Trade Gothic LT Std';-inkscape-font-specification:'Trade Gothic LT Std';stroke-width:4.40493">Biodesign      UCC</tspan></text>
   </g>
 </svg>

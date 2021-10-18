@@ -102,7 +102,7 @@ Here is a list of some useful software tools used by the group.
 
 * `Git <https://git-scm.com/download/win>`_ is the version control tool used in the group. This link is for the windows version.
 * `3D Slicer <https://www.slicer.org/>`_ - is a visualisation tool for processing and viewing medical imaging and live optical and EM tracking data through OpenIGTLink.
-* `OpenIGTLink <http://openigtlink.org/>`_ - is a network protocol for transferring image and position tracking data. It is used extensively in Anser EMT for ineterfacing with other software. The language of the core library is C++.
+* `OpenIGTLink <http://openigtlink.org/>`_ - is a network protocol for transferring image and position tracking data. It is used extensively in Anser EMT for interfacing with other software. The language of the core library is C++.
 * `PyIGTLink <https://github.com/Danielhiversen/pyIGTLink>`_ is an implementation of the OpenIGTLink protocol written in Python.
 * `OpenIGTLink MatlabUtils <https://github.com/PlusToolkit/PlusMatlabUtils/tree/master/MatlabOpenIGTLinkInterface>`_ is an implementation of the OpenIGTLink protocol written in Matlab.
 * `PLUS toolkit <https://plustoolkit.github.io/>`_ is a software package for communicating with many commercial optical and magnetic tracking systems. e.g. the NDI Polaris and Aurora systems.
