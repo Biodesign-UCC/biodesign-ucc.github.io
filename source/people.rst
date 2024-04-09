@@ -20,9 +20,8 @@ PhD & Master's students
 * `Manish Srivastava <https://www.researchgate.net/profile/Manish_Srivastava19/>`_
 * `Marco Cavaliere <https://www.researchgate.net/profile/Marco-Cavaliere>`_
 * `Aleksandr Sidun <https://www.researchgate.net/profile/Aleksandr-Sidun>`_
-* Alessandro Ferro
 * `Daragh Crowley <https://www.linkedin.com/in/daraghcrowley/>`_
-* `Aoife Fitton <https://www.linkedin.com/in/aoife-fitton-352a46191/>`_
+* Eoin Higgins
 
 
 Alumni
@@ -40,3 +39,5 @@ Alumni
 * Alberto Corvo
 * Declan Loughnane
 * Martin McMenamin
+* Aoife Fitton
+* Alessandro Ferro
