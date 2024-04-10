@@ -19,7 +19,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Biodesign UCC'
-copyright = '2021, Biodesign-UCC'
+copyright = '2024, Biodesign-UCC'
 author = 'Biodesign-UCC'
 
 html_logo = "_static/group-logo.png"
