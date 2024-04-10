@@ -15,6 +15,7 @@ Research staff
 * Irene Giuffrida
 
 PhD & Master's students
+
 * `Manish Srivastava <https://www.researchgate.net/profile/Manish_Srivastava19/>`_
 * `Daragh Crowley <https://www.researchgate.net/profile/Daragh-Crowley/>`_
 * Eoin Higgins
