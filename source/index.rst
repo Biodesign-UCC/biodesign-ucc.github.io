@@ -10,6 +10,17 @@ Biodesign UCC
 SAGES 2024 Videos
 ----------
 
+**Wireless Electromagnetic Tracking with Sub-millimetre Accuracy for Image Guided Laparoscopic Procedures**
+
+**Distortion-Free Magnetic Tracking of Metal Instruments in Image-Guided Interventions**
+
+.. raw:: html
+
+    <video width="80%" controls>
+        <source src="_static/metal_instrument_tracking.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
 Quicklinks
 ----------
 

@@ -38,6 +38,7 @@ extensions = [
 'sphinx_panels',
 'sphinxcontrib.bibtex',
 'sphinxcontrib.youtube',
+'sphinxcontrib.video',
 ]
 bibtex_bibfiles = ['refs.bib']
 bibtex_default_style = 'unsrtalpha'
