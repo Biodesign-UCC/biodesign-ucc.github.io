@@ -12,6 +12,14 @@ SAGES 2024 Videos
 
 **Wireless Electromagnetic Tracking with Sub-millimetre Accuracy for Image Guided Laparoscopic Procedures**
 
+.. raw:: html
+
+    <iframe src=https://1drv.ms/v/s!Aq8hoMv9P6M1k3swVingfSbjtPz4?e=6y3FFM" width="600" height="400" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+.. raw:: html
+
+   <br><br><br>
+
 **Distortion-Free Magnetic Tracking of Metal Instruments in Image-Guided Interventions**
 
 .. raw:: html
